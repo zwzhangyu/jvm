@@ -15,4 +15,9 @@
 - com.zy.gc_log 观察Minor GC、Major GC以及Full GC日志信息
 
 
+## chapter7 方法区
+- com.zy.oom OutOfMemory举例
+
+
+
 
