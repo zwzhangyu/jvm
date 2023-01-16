@@ -1,7 +1,7 @@
 package byecode.zy.test;
 
 
-import byecode.zy.ClassFileAnalysiser;
+import byecode.zy.handler.ClassFileAnalysiser;
 import byecode.zy.type.ClassFile;
 import byecode.zy.type.CpInfo;
 

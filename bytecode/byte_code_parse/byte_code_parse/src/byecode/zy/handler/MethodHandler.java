@@ -1,9 +1,14 @@
 package byecode.zy.handler;
 
 import byecode.zy.type.*;
+import byecode.zy.type.cp.CONSTANT_Utf8_info;
+import byecode.zy.util.FieldAccessFlagUtils;
 
 import java.nio.ByteBuffer;
 
+/**
+ * 解析方法表
+ */
 public class MethodHandler implements BaseByteCodeHandler {
 
     @Override
@@ -55,6 +60,31 @@ public class MethodHandler implements BaseByteCodeHandler {
                 methodInfos[i].getAttributes()[j].setInfo(info);
             }
         }
+        printMethodHandlerHandler(classFile);
     }
 
+
+    private static String getName(U2 name_index, ClassFile classFile) {
+        CONSTANT_Utf8_info name_info = (CONSTANT_Utf8_info)
+                classFile.getConstant_pool()[name_index.toInt() - 1];
+        return name_info.toString();
+    }
+
+    public void printMethodHandlerHandler(ClassFile classFile) throws Exception {
+        System.out.println("===============解析方法表=============");
+        System.out.println("方法总数:" + classFile.getMethods_count().toInt());
+        System.out.println();
+        MethodInfo[] methodInfos = classFile.getMethods();
+        // 遍历方法表
+        for (MethodInfo methodInfo : methodInfos) {
+            System.out.println("访问标志和属性：" + FieldAccessFlagUtils
+                    .toFieldAccessFlagsString(methodInfo.getAccess_flags()));
+            System.out.println("方法名：" + getName(methodInfo.getName_index(), classFile));
+            System.out.println("方法描述符："
+                    + getName(methodInfo.getDescriptor_index(), classFile));
+            System.out.println("属性总数：" + methodInfo.getAttributes_count().toInt());
+            System.out.println();
+        }
+        System.out.println("===============解析方法表结束=============");
+    }
 }

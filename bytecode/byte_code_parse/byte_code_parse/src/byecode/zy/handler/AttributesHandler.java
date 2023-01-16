@@ -7,6 +7,13 @@ import byecode.zy.type.U4;
 
 import java.nio.ByteBuffer;
 
+/**
+ * 解析class文件的属性表
+ * 1.字段结构和方法结构也都有属性表，所以要注意不要将这些属性表混在一起理解。
+ * 2.所有属性都有一个通用的结构，因此，解析class文件结构的属性表我们也可以使用通用的属性结构来解析。
+ * 3.解析步骤是先从class文件字节缓存中读取两个字节，如果前面的解析工作都正常，那么现在读取到的这两个字节就是该class文件属性表的长度。
+ * 4.接着根据长度创建属性表，使用通用属性结构循环解析出每个属性，循环次数为属性的总数
+ */
 public class AttributesHandler implements BaseByteCodeHandler {
 
     @Override

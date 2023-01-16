@@ -1,6 +1,5 @@
-package byecode.zy;
+package byecode.zy.handler;
 
-import byecode.zy.handler.*;
 import byecode.zy.type.ClassFile;
 
 import java.nio.ByteBuffer;
@@ -8,6 +7,12 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+
+/**
+ *
+ * @author zhangyu
+ * @date 2023/1/16
+ */
 public class ClassFileAnalysiser {
 
     private final static List<BaseByteCodeHandler> handlers = new ArrayList<>();
