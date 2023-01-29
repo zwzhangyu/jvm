@@ -1,4 +1,4 @@
-package com.atguigu.java2;
+package custom_classloader;
 
 /**
  * 测试自定义类加载器

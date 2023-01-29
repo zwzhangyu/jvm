@@ -1,4 +1,4 @@
-package com.atguigu.java2;
+package custom_classloader;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;

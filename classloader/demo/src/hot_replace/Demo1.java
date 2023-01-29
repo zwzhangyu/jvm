@@ -1,4 +1,4 @@
-package demo2;
+package hot_replace;
 
 
 public class Demo1 {
