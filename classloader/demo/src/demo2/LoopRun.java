@@ -2,10 +2,6 @@ package demo2;
 
 import java.lang.reflect.Method;
 
-/**
- * @author shkstart
- * @create 11:08
- */
 public class LoopRun {
     public static void main(String args[]) {
         while (true) {
