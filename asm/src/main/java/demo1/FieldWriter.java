@@ -9,8 +9,11 @@ import java.util.List;
 public class FieldWriter implements FieldVisitor {
 
     private String access;
+
     private String name;
+
     private String descriptor;
+
     private List<String> annotations;
 
     public FieldWriter(String access, String name, String descriptor) {

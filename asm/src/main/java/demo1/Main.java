@@ -1,5 +1,13 @@
 package demo1;
 
+
+/**
+ * 简单版ASM框架生成一个类，为该类添加一个字段并为该字段添加一个注解，
+ * 然后为该类添加一个方法并设置该方法的局部变量表和操作数栈的大小
+ *
+ * @author zhangyu
+ * @date 2023/2/25
+ */
 public class Main {
     public static void main(String[] args) {
         ClassWriter classWriter = new ClassWriter();
