@@ -1,0 +1,3 @@
+- demo1 动态创建新类或新接口的二进制字节码
+- demo2.JavassistTimeCalcExample2 动态扩展现有类或接口的二进制字节码(AOP)
+- demo2.JavassistTimeCalcExample3 动态扩展现有类或接口的二进制字节码(ProxyFactory)
