@@ -8,11 +8,11 @@
         <version>2.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.zy</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.zy.javassist</groupId>
+    <artifactId>example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
-    <description>demo</description>
+    <name>example</name>
+    <description>example</description>
     <properties>
         <java.version>11</java.version>
         <javaassist.version>3.21.0-GA</javaassist.version>
