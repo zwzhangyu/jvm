@@ -1,0 +1,19 @@
+   public void update(com.zy.mybatis.generatedaoproxy.Employee arg0) {
+        org.apache.ibatis.session.SqlSession session = com.zy.mybatis.generatedaoproxy.SqlSessionUtil.openSession();
+        return session.update("com.zy.mybatis.generatedaoproxy.EmployeeDao.update", arg0);
+    }
+
+    public void delete(java.lang.Long arg0) {
+        org.apache.ibatis.session.SqlSession session = com.zy.mybatis.generatedaoproxy.SqlSessionUtil.openSession();
+        session.delete("com.zy.mybatis.generatedaoproxy.EmployeeDao.delete", arg0);
+    }
+
+    public void insert(com.zy.mybatis.generatedaoproxy.Employee arg0) {
+        org.apache.ibatis.session.SqlSession session = com.zy.mybatis.generatedaoproxy.SqlSessionUtil.openSession();
+        session.insert("com.zy.mybatis.generatedaoproxy.EmployeeDao.insert", arg0);
+    }
+
+    public com.zy.mybatis.generatedaoproxy.Employee selectById(java.lang.Long arg0) {
+        org.apache.ibatis.session.SqlSession session = com.zy.mybatis.generatedaoproxy.SqlSessionUtil.openSession();
+        return (com.zy.mybatis.generatedaoproxy.Employee) session.selectOne("com.zy.mybatis.generatedaoproxy.EmployeeDao.selectById", arg0);
+    }
