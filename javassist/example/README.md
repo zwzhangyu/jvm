@@ -1,3 +1,6 @@
 - demo1 动态创建新类或新接口的二进制字节码
 - demo2.JavassistTimeCalcExample2 动态扩展现有类或接口的二进制字节码(AOP)
 - demo2.JavassistTimeCalcExample3 动态扩展现有类或接口的二进制字节码(ProxyFactory)
+- com.zy.mybatis.generatedaoproxy 通过javassist操作字节码实现MyBatis动态生成DAO的实现类功能
+- com.zy.mybatis.create_class 使用javassist动态生成类
+- com.zy.mybatis.multi_interface_methods 使用javassist动态实现接口的多个方法
